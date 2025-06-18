@@ -23,21 +23,15 @@ Proses penyangraian dibagi menjadi 3 tahap utama:
 
 ---
 
-## 📦 Instalasi
+## 📦 Instalasi & Setup
 
-### 1. Clone Repository
-
-```bash
-git clone https://github.com/VITOGEOMATH/SISTEM-MONITORING-dan-KELEMBABAN-UNTUK-GUDANG-FERMENTASI-KOPI
-```
-
-### 2. Install Python Dependencies
+### 1. Install Python Dependencies
 
 ```bash
 pip install tokio-modbus tokio-serial matplotlib requests chrono influxdb-client tkinter serde reqwest
 ```
 
-### 3. Siapkan InfluxDB
+### 2. Siapkan InfluxDB
 
 - Jalankan atau instal **InfluxDB v2** di localhost.
 - Buat konfigurasi berikut:
@@ -45,6 +39,18 @@ pip install tokio-modbus tokio-serial matplotlib requests chrono influxdb-client
   - **Bucket**
   - **Token**
 - Catat nama bucket dan token untuk konfigurasi aplikasi.
+
+### 3. Setup Dashboard Grafana
+
+- Install **Grafana** di lokal atau server.
+- Tambahkan data source dari **InfluxDB v2**:
+  - URL: `http://localhost:8086`
+  - Organization: sesuai konfigurasi
+  - Token: token yang dibuat
+  - Bucket: nama bucket
+- Import dashboard atau buat panel baru:
+  - Gunakan query untuk memantau `temperature` dan `humidity`
+  - Tambahkan panel gauge dan time series untuk visualisasi realtime
 
 ### 4. Konfigurasi Sensor Modbus RTU
 
@@ -90,6 +96,28 @@ python gui.py
 
 ---
 
+## 🌐 Integrasi Web 3.0: Monitoring Berbasis Ethereum
+
+Sebagai bentuk inovasi berbasis teknologi **Web 3.0**, sistem ini dilengkapi dengan dashboard web interaktif yang membaca data dari smart contract Ethereum menggunakan **JavaScript** dan **ethers.js**.
+
+### 🔨 Komponen Web:
+
+- **HTML**: Membuat kerangka dashboard, tabel data, dan grafik pemantauan.
+- **JavaScript**: Mengakses smart contract Ethereum, membaca event `DataStored`, memproses data suhu dan kelembaban secara dinamis, dan mengupdate DOM dan grafik Chart.js.
+- **CSS**: Menyediakan tampilan modern dengan dukungan **dark mode**, responsive layout, dan komponen visual intuitif.
+
+### 🧩 Penjelasan Fungsionalitas:
+
+- Web akan terkoneksi ke Ganache/Metamask melalui **ethers.js**.
+- Setelah koneksi berhasil, tombol “Load Sensor Data” akan menampilkan hingga 20 data terakhir dari blockchain.
+- Data suhu dan kelembaban disajikan dalam bentuk **grafik interaktif** dan **tabel data**.
+- Fitur peringatan otomatis akan muncul jika suhu/kelembaban melampaui ambang batas (set-point) yang dapat dikonfigurasi oleh pengguna.
+- Tabel juga menampilkan biaya operasional pemantauan sebesar **Rp. 50 per data** sebagai simulasi model ekonomi.
+
+Dashboard Web3 ini mendemonstrasikan bagaimana **teknologi blockchain** dapat dimanfaatkan dalam **industri pertanian** untuk mencatat data penting secara terdesentralisasi dan tidak dapat dimanipulasi.
+
+---
+
 ## 📁 Struktur Proyek
 
 ```
@@ -97,6 +125,9 @@ proyek-monitoring-sensor/
 ├── tcp_server.rs         # Server TCP (menggunakan Tokio dan Reqwest)
 ├── modbus_client.rs      # Client pembaca sensor (Modbus RTU)
 ├── gui.py                # GUI Python (Tkinter + Matplotlib)
+├── index.html            # Web 3 Dashboard
+├── script.js             # Ethers.js + Chart.js Logic
+├── style.css             # Styling untuk dashboard web
 ├── Cargo.toml            # Konfigurasi proyek Rust
 └── README.md             # Dokumentasi proyek
 ```
@@ -111,6 +142,7 @@ proyek-monitoring-sensor/
 - 📄 Fitur export ke CSV dari grafik historis.
 - 🌐 Dukungan konfigurasi melalui file `.env`.
 - 📲 Dashboard web berbasis React/Chart.js.
+- 🪙 Simulasi tokenisasi data untuk biaya akses.
 
 ---
 
@@ -124,3 +156,4 @@ Gunakan dengan bijak dan konsultasikan sebelum digunakan dalam produksi.
 > “Suhu adalah nyawa dari penyangraian kopi. Sedikit salah, rasa kopi pun berubah.”
 
 Referensi: https://www.cctcid.com/2018/10/25/penyangraian-biji-kopi/
+
