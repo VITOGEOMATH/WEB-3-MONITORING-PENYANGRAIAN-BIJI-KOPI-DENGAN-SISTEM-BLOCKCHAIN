@@ -1,4 +1,4 @@
-# WEB-3-MONITORING-PENYANGRAIAN-BIJI-KOPI-DENGAN-SISTEM-BLOCKCHAIN
+# ☕ WEB 3 MONITORING PENYANGRAIAN BIJI KOPI DENGAN SENSOR DAN BLOCKCHAIN
 INTERKONEKSI SISTEM INSTRUMENTASI - INSTITUT TEKNOLOGI SEPULUH NOPEMBER
 ![alt text](https://github.com/VITOGEOMATH/WEB-3-MONITORING-PENYANGRAIAN-BIJI-KOPI-DENGAN-SISTEM-BLOCKCHAIN/blob/main/GUI%20Monitoring%20WEB%203)
 ![alt text](https://github.com/VITOGEOMATH/WEB-3-MONITORING-PENYANGRAIAN-BIJI-KOPI-DENGAN-SISTEM-BLOCKCHAIN/blob/main/GUI%20WEB%203%20(2))
@@ -11,6 +11,16 @@ INTERKONEKSI SISTEM INSTRUMENTASI - INSTITUT TEKNOLOGI SEPULUH NOPEMBER
 4. Muhammad Rif'al Faiz Arivito (2042231067)
 
 ![alt text](https://github.com/VITOGEOMATH/WEB-3-MONITORING-PENYANGRAIAN-BIJI-KOPI-DENGAN-SISTEM-BLOCKCHAIN/blob/main/Plant%20Fermentasi)
+
+Sistem ini dirancang untuk memantau proses **penyangraian biji kopi** secara real-time menggunakan sensor suhu dan kelembaban berbasis Modbus RTU. Data yang diperoleh tidak hanya disimpan di InfluxDB namun juga dicatat di jaringan blockchain Ethereum sebagai bentuk transparansi dan keamanan data.
+
+Inspirasi sistem diambil dari proses penyangraian kopi sebagaimana dijelaskan oleh [CCTCID](https://www.cctcid.com/2018/10/25/penyangraian-biji-kopi/), di mana suhu dan waktu memegang peran penting dalam menghasilkan cita rasa terbaik dari biji kopi.
+
+Proses penyangraian dibagi menjadi 3 tahap utama:
+1. **Pengeringan Awal** (drying) → suhu meningkat secara bertahap hingga ±165°C.
+2. **Pengembangan** (development) → suhu menuju 185–210°C, terjadi first crack.
+3. **Penyangraian Penuh** → suhu puncak 210–220°C tergantung jenis sangrai (light, medium, dark).
+
 ---
 
 ## 📦 Instalasi
@@ -73,6 +83,8 @@ python gui.py
 
 - ✅ Menampilkan data suhu dan kelembaban secara **real-time** dari **InfluxDB**.
 - 📈 Menampilkan **grafik historis** berdasarkan input waktu pengguna.
+- 🔔 Peringatan otomatis jika suhu/kelembaban melebihi set-point.
+- 💰 Informasi biaya monitoring: Rp. 50 per data.
 - ⏰ Input waktu menggunakan format **RFC3339**  
   Contoh: `2025-05-30T08:00:00Z`
 
@@ -91,17 +103,24 @@ proyek-monitoring-sensor/
 
 ---
 
-## 🚀 Perbaikan & Pengembangan Selanjutnya
+## 🚀 Rencana Pengembangan
 
-- ✅ Tambahkan fitur logging untuk menyimpan semua data lokal.
-- ✅ Tambahkan validasi waktu input di GUI.
-- 🔒 Tambahkan autentikasi dasar di TCP server.
-- 📄 Tambahkan fitur export CSV dari data historis.
-- 🌐 Tambahkan opsi konfigurasi melalui file `.env` atau GUI.
+- ✅ Logging lokal untuk semua data sensor.
+- ✅ Validasi waktu input dan format.
+- 🔒 Proteksi koneksi TCP melalui autentikasi.
+- 📄 Fitur export ke CSV dari grafik historis.
+- 🌐 Dukungan konfigurasi melalui file `.env`.
+- 📲 Dashboard web berbasis React/Chart.js.
 
 ---
 
 ## 📃 Lisensi
 
-Proyek ini hanya digunakan untuk kebutuhan tugas akhir/akademik.  
-Kontak supervisor atau anggota kelompok untuk penggunaan lebih lanjut.
+Proyek ini dikembangkan untuk keperluan riset dan akademik oleh Kelompok 8.  
+Gunakan dengan bijak dan konsultasikan sebelum digunakan dalam produksi.
+
+---
+
+> “Suhu adalah nyawa dari penyangraian kopi. Sedikit salah, rasa kopi pun berubah.”
+
+Referensi: https://www.cctcid.com/2018/10/25/penyangraian-biji-kopi/
