@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Monitoring Penyangraian Kopi</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+  <div class="container">
+    <h1>☕ Penyangraian Biji Kopi - Monitoring Realtime</h1>
+    <h3 class="team-info">👨‍💻 Kelompok 8 &nbsp;|&nbsp; 🔗 Status InfluxDB: <span id="dbStatus">Terhubung ✅</span></h3>
+
+    <div class="status-box">
+      <div>🌡️ Suhu Saat Ini: <span id="currentTemp">-</span></div>
+      <div>💧 Kelembaban Saat Ini: <span id="currentHumidity">-</span></div>
+    </div>
+
+    <div class="main-content">
+      <div class="table-section">
+        <h2>📊 Data Realtime</h2>
+        <table id="dataTable">
+          <thead>
+            <tr>
+              <th>Waktu</th>
+              <th>Suhu (°C)</th>
+              <th>Kelembaban (%)</th>
+            </tr>
+          </thead>
+          <tbody></tbody>
+        </table>
+        <button id="sendToBlockchain">🚀 Kirim ke Blockchain</button>
+        <div id="blockchainStatus" class="send-status"></div>
+      </div>
+
+      <div class="chart-section">
+        <h2>📈 Grafik Monitoring</h2>
+        <canvas id="sensorChart"></canvas>
+      </div>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>

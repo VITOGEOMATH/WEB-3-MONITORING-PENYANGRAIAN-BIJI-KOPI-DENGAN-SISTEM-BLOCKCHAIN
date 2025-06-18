@@ -1,0 +1,86 @@
+body {
+  background-color: #121212;
+  color: #ffffff;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  padding: 30px;
+  text-align: center;
+}
+
+h1 {
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+
+.team-info {
+  font-weight: 400;
+  margin-bottom: 20px;
+  color: #ccc;
+}
+
+.status-box {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  font-size: 18px;
+  margin-bottom: 30px;
+}
+
+.main-content {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.table-section, .chart-section {
+  background-color: #1e1e1e;
+  padding: 20px;
+  border-radius: 10px;
+  flex: 1;
+  min-width: 300px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+
+table, th, td {
+  border: 1px solid #333;
+}
+
+th, td {
+  padding: 10px;
+  text-align: center;
+}
+
+th {
+  background-color: #333;
+}
+
+button#sendToBlockchain {
+  margin-top: 15px;
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #008cba;
+  border: none;
+  color: white;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+button#sendToBlockchain:hover {
+  background-color: #006f98;
+}
+
+.send-status {
+  margin-top: 10px;
+  font-size: 14px;
+  color: #0f0;
+}
