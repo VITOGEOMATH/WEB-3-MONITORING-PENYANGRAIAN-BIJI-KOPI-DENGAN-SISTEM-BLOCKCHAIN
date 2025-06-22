@@ -16,6 +16,12 @@ INTERKONEKSI SISTEM INSTRUMENTASI - INSTITUT TEKNOLOGI SEPULUH NOPEMBER
 ## LINK LAPORAN :
 ### https://docs.google.com/document/d/1uh34bTYC3HWArDAOALmnJyHT0UnrbRa1HvfrBOI-CYI/edit?usp=sharing
 
+## PPT PROJECT :
+### https://www.canva.com/design/DAGqucA_gGY/wmv-t1jH3IysHDXTQOUMVw/edit?utm_content=DAGqucA_gGY&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton
+
+## LINK GitHub Py QT Dashboard :
+### https://github.com/VITOGEOMATH/SISTEM-MONITORING-dan-KELEMBABAN-UNTUK-GUDANG-FERMENTASI-KOPI
+
 ![alt text](https://github.com/VITOGEOMATH/WEB-3-MONITORING-PENYANGRAIAN-BIJI-KOPI-DENGAN-SISTEM-BLOCKCHAIN/blob/main/Plant%20Fermentasi)
 
 Sistem ini dirancang untuk memantau proses **penyangraian biji kopi** secara real-time menggunakan sensor suhu dan kelembaban berbasis Modbus RTU. Data yang diperoleh tidak hanya disimpan di InfluxDB namun juga dicatat di jaringan blockchain Ethereum sebagai bentuk transparansi dan keamanan data.
