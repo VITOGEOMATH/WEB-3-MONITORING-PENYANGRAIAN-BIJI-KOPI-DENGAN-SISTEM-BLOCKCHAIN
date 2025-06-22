@@ -10,6 +10,12 @@ INTERKONEKSI SISTEM INSTRUMENTASI - INSTITUT TEKNOLOGI SEPULUH NOPEMBER
 3. Muhammad Jidan Baraja (2042231009)  
 4. Muhammad Rif'al Faiz Arivito (2042231067)
 
+## LINK PROJECT :
+### https://drive.google.com/file/d/15U2q3P6YobHmFJ7lcaOzDBl9Wc-OlSt_/view
+
+## LINK LAPORAN :
+### https://docs.google.com/document/d/1uh34bTYC3HWArDAOALmnJyHT0UnrbRa1HvfrBOI-CYI/edit?usp=sharing
+
 ![alt text](https://github.com/VITOGEOMATH/WEB-3-MONITORING-PENYANGRAIAN-BIJI-KOPI-DENGAN-SISTEM-BLOCKCHAIN/blob/main/Plant%20Fermentasi)
 
 Sistem ini dirancang untuk memantau proses **penyangraian biji kopi** secara real-time menggunakan sensor suhu dan kelembaban berbasis Modbus RTU. Data yang diperoleh tidak hanya disimpan di InfluxDB namun juga dicatat di jaringan blockchain Ethereum sebagai bentuk transparansi dan keamanan data.
