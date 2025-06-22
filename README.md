@@ -1,5 +1,6 @@
 # ☕ WEB 3 MONITORING PENYANGRAIAN BIJI KOPI DENGAN SENSOR DAN BLOCKCHAIN
 INTERKONEKSI SISTEM INSTRUMENTASI - INSTITUT TEKNOLOGI SEPULUH NOPEMBER
+
 ![alt text](https://github.com/VITOGEOMATH/WEB-3-MONITORING-PENYANGRAIAN-BIJI-KOPI-DENGAN-SISTEM-BLOCKCHAIN/blob/main/GUI%20Monitoring%20WEB%203)
 ![alt text](https://github.com/VITOGEOMATH/WEB-3-MONITORING-PENYANGRAIAN-BIJI-KOPI-DENGAN-SISTEM-BLOCKCHAIN/blob/main/GUI%20WEB%203%20(2))
 
@@ -23,7 +24,7 @@ INTERKONEKSI SISTEM INSTRUMENTASI - INSTITUT TEKNOLOGI SEPULUH NOPEMBER
 ### https://github.com/VITOGEOMATH/SISTEM-MONITORING-dan-KELEMBABAN-UNTUK-GUDANG-FERMENTASI-KOPI
 
 
-![alt text](https://github.com/VITOGEOMATH/WEB-3-MONITORING-PENYANGRAIAN-BIJI-KOPI-DENGAN-SISTEM-BLOCKCHAIN/blob/main/Plant%20Fermentasi)
+![alt text](https://github.com/VITOGEOMATH/WEB-3-MONITORING-PENYANGRAIAN-BIJI-KOPI-DENGAN-SISTEM-BLOCKCHAIN/blob/main/Plant%20Penyangraian)
 
 Sistem ini dirancang untuk memantau proses **penyangraian biji kopi** secara real-time menggunakan sensor suhu dan kelembaban berbasis Modbus RTU. Data yang diperoleh tidak hanya disimpan di InfluxDB namun juga dicatat di jaringan blockchain Ethereum sebagai bentuk transparansi dan keamanan data.
 
